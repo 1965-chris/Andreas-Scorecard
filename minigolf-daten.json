@@ -993,7 +993,7 @@
     "Heike": {
       "2026": {
         "tariff": "none",
-        "on": true
+        "on": false
       }
     }
   }
