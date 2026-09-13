@@ -980,5 +980,6 @@
     "players": [],
     "accessories": [],
     "gastro": []
-  }
+  },
+  "playerPricing": {}
 }
