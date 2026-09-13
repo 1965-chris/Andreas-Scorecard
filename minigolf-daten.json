@@ -839,7 +839,15 @@
       ]
     }
   ],
-  "pricing": {},
+  "pricing": {
+    "2026": {
+      "firstRoundPerDay": 4,
+      "extraRoundPerDay": 2.8,
+      "seasonPass": 350,
+      "hasSeasonPass": false,
+      "seasonPassType": "none"
+    }
+  },
   "accessories": [],
   "gastro": [],
   "tournamentPlacements": {},
@@ -981,5 +989,12 @@
     "accessories": [],
     "gastro": []
   },
-  "playerPricing": {}
+  "playerPricing": {
+    "Heike": {
+      "2026": {
+        "tariff": "none",
+        "on": true
+      }
+    }
+  }
 }
