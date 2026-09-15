@@ -841,7 +841,64 @@
     {
       "id": "ka020506",
       "name": "Einballturnier",
-      "rounds": []
+      "rounds": [
+        {
+          "date": "2026-09-15",
+          "year": "2026",
+          "groupId": "l5599ewm",
+          "time": "13:08",
+          "id": "o2gsh81y",
+          "scores": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1
+          ],
+          "roundNumber": 2
+        },
+        {
+          "date": "2026-09-15",
+          "year": "2026",
+          "groupId": "l5599ewm",
+          "time": "13:08",
+          "id": "v36rw2vg",
+          "scores": [
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1
+          ],
+          "roundNumber": 1
+        }
+      ]
     }
   ],
   "pricing": {
@@ -855,7 +912,18 @@
   },
   "accessories": [],
   "gastro": [],
-  "tournamentPlacements": {},
+  "tournamentPlacements": {
+    "l5599ewm": {
+      "place": "",
+      "totalPlayers": "",
+      "img1": null,
+      "img2": null,
+      "locked": false,
+      "jumpHeight": "",
+      "hardness": "",
+      "weight": ""
+    }
+  },
   "balls": [
     {
       "id": "eb7yjndnum",
