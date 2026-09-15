@@ -1015,7 +1015,79 @@
     "voiceName": "Anna"
   },
   "holeDefaultBalls": {},
-  "pausedRounds": [],
+  "pausedRounds": [
+    {
+      "pauseId": "876aemv0",
+      "pausedAt": "2026-09-15T11:06:50.724Z",
+      "phase": "play",
+      "selectedIds": [
+        "ka020506",
+        "ka020506__slot2"
+      ],
+      "saveIds": [
+        "ka020506",
+        "ka020506__slot2"
+      ],
+      "date": "2026-09-15",
+      "time": "13:06",
+      "currentHole": 0,
+      "tournamentRound": 1,
+      "weatherKeys": [],
+      "temperature": "",
+      "windSpeed": "",
+      "precipProbability": "",
+      "scoresByPlayer": {
+        "ka020506": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "ka020506__slot2": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "notesByPlayer": {
+        "ka020506": {},
+        "ka020506__slot2": {}
+      },
+      "starsByPlayer": {
+        "ka020506": {},
+        "ka020506__slot2": {}
+      }
+    }
+  ],
   "retiredPauseIds": [],
   "deletedIds": {
     "rounds": [
