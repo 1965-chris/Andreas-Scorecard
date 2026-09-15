@@ -837,6 +837,40 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ka020506",
+      "name": "Einballturnier",
+      "rounds": [
+        {
+          "date": "2026-09-15",
+          "year": "2026",
+          "groupId": "91a0qj8k",
+          "time": "13:04",
+          "id": "vvp99vrg",
+          "scores": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "roundNumber": 1
+        }
+      ]
     }
   ],
   "pricing": {
