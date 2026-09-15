@@ -845,34 +845,6 @@
         {
           "date": "2026-09-15",
           "year": "2026",
-          "groupId": "jea8s5z1",
-          "time": "13:06",
-          "id": "hee7s4n2",
-          "scores": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
-          ],
-          "roundNumber": 2
-        },
-        {
-          "date": "2026-09-15",
-          "year": "2026",
           "groupId": "91a0qj8k",
           "time": "13:04",
           "id": "vvp99vrg",
@@ -1052,7 +1024,8 @@
       "0uwf95lh",
       "4j60wk6m",
       "q5uk8b68",
-      "fhp4iu27"
+      "fhp4iu27",
+      "hee7s4n2"
     ],
     "players": [],
     "accessories": [],
