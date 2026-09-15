@@ -841,64 +841,7 @@
     {
       "id": "ka020506",
       "name": "Einballturnier",
-      "rounds": [
-        {
-          "date": "2026-09-15",
-          "year": "2026",
-          "groupId": "l5599ewm",
-          "time": "13:08",
-          "id": "o2gsh81y",
-          "scores": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            1,
-            2,
-            2,
-            2,
-            1,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            1
-          ],
-          "roundNumber": 2
-        },
-        {
-          "date": "2026-09-15",
-          "year": "2026",
-          "groupId": "l5599ewm",
-          "time": "13:08",
-          "id": "v36rw2vg",
-          "scores": [
-            2,
-            2,
-            1,
-            2,
-            2,
-            2,
-            1,
-            2,
-            2,
-            2,
-            1,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            1
-          ],
-          "roundNumber": 1
-        }
-      ]
+      "rounds": []
     }
   ],
   "pricing": {
@@ -912,18 +855,7 @@
   },
   "accessories": [],
   "gastro": [],
-  "tournamentPlacements": {
-    "l5599ewm": {
-      "place": "",
-      "totalPlayers": "",
-      "img1": null,
-      "img2": null,
-      "locked": false,
-      "jumpHeight": "",
-      "hardness": "",
-      "weight": ""
-    }
-  },
+  "tournamentPlacements": {},
   "balls": [
     {
       "id": "eb7yjndnum",
@@ -1065,7 +997,9 @@
       "q5uk8b68",
       "fhp4iu27",
       "hee7s4n2",
-      "vvp99vrg"
+      "vvp99vrg",
+      "o2gsh81y",
+      "v36rw2vg"
     ],
     "players": [],
     "accessories": [],
