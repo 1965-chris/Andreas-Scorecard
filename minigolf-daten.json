@@ -837,11 +837,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "ka020506",
-      "name": "Einballturnier",
-      "rounds": []
     }
   ],
   "pricing": {
@@ -1001,7 +996,9 @@
       "o2gsh81y",
       "v36rw2vg"
     ],
-    "players": [],
+    "players": [
+      "ka020506"
+    ],
     "accessories": [],
     "gastro": []
   },
