@@ -939,11 +939,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "d0eqbd40",
-      "name": "Einballturnier Andreas",
-      "rounds": []
     }
   ],
   "pricing": {
@@ -1121,7 +1116,8 @@
     ],
     "players": [
       "ka020506",
-      "l3ek7het"
+      "l3ek7het",
+      "d0eqbd40"
     ],
     "accessories": [],
     "gastro": []
