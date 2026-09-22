@@ -1086,7 +1086,7 @@
   "pausedRounds": [
     {
       "pauseId": "63we9tdp",
-      "pausedAt": "2026-09-22T08:52:01.332Z",
+      "pausedAt": "2026-09-22T08:52:35.281Z",
       "phase": "play",
       "selectedIds": [
         "p2",
@@ -1108,7 +1108,7 @@
       "precipProbability": "0",
       "scoresByPlayer": {
         "p2": [
-          "",
+          "1",
           "",
           "",
           "",
@@ -1128,7 +1128,7 @@
           ""
         ],
         "2v122fi8": [
-          "",
+          "1",
           "",
           "",
           "",
