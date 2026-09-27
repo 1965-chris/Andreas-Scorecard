@@ -1051,6 +1051,74 @@
       "name": "Einballturnier Andreas",
       "rounds": [
         {
+          "date": "2022-09-25",
+          "year": "2022",
+          "groupId": "s0qd6gxe",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "24",
+          "windSpeed": "2",
+          "precipProbability": "0",
+          "id": "tawoqua4",
+          "scores": [
+            2,
+            2,
+            3,
+            2,
+            2,
+            3,
+            1,
+            5,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            1
+          ],
+          "roundNumber": 2,
+          "orderTracked": true
+        },
+        {
+          "date": "2022-09-25",
+          "year": "2022",
+          "groupId": "s0qd6gxe",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "24",
+          "windSpeed": "2",
+          "precipProbability": "0",
+          "id": "5bek2l2i",
+          "scores": [
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            3,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1
+          ],
+          "roundNumber": 1,
+          "orderTracked": true
+        },
+        {
           "date": "2019-05-19",
           "year": "2019",
           "groupId": "kdvjw1kd",
@@ -1380,6 +1448,16 @@
       "hardness": "",
       "weight": "",
       "ballId": "eb315oedfe"
+    },
+    "s0qd6gxe": {
+      "place": "",
+      "totalPlayers": "",
+      "img1": null,
+      "img2": null,
+      "locked": false,
+      "jumpHeight": "",
+      "hardness": "",
+      "weight": ""
     }
   },
   "balls": [
