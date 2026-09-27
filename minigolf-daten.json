@@ -1770,6 +1770,16 @@
       "hardness": "61",
       "weight": "52",
       "ballId": "eb7yjndnum"
+    },
+    "dxxuv6cc": {
+      "place": "6",
+      "totalPlayers": "112",
+      "img1": null,
+      "img2": null,
+      "locked": false,
+      "jumpHeight": "",
+      "hardness": "",
+      "weight": ""
     }
   },
   "balls": [
