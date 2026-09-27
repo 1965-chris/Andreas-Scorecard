@@ -1601,6 +1601,74 @@
       "name": "Einballturnier Heike",
       "rounds": [
         {
+          "date": "2023-08-13",
+          "year": "2023",
+          "groupId": "rq8fs2o3",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "23",
+          "windSpeed": "2",
+          "precipProbability": "0",
+          "id": "suwp6f5v",
+          "scores": [
+            3,
+            2,
+            2,
+            3,
+            2,
+            2,
+            1,
+            4,
+            2,
+            1,
+            4,
+            2,
+            1,
+            2,
+            3,
+            2,
+            1,
+            2
+          ],
+          "roundNumber": 2,
+          "orderTracked": true
+        },
+        {
+          "date": "2023-08-13",
+          "year": "2023",
+          "groupId": "rq8fs2o3",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "23",
+          "windSpeed": "2",
+          "precipProbability": "0",
+          "id": "eqtxvt3j",
+          "scores": [
+            2,
+            2,
+            3,
+            6,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            1
+          ],
+          "roundNumber": 1,
+          "orderTracked": true
+        },
+        {
           "date": "2022-09-25",
           "year": "2022",
           "groupId": "6te5974q",
@@ -2089,6 +2157,16 @@
       "img1": null,
       "img2": null,
       "locked": true,
+      "jumpHeight": "",
+      "hardness": "",
+      "weight": ""
+    },
+    "rq8fs2o3": {
+      "place": "",
+      "totalPlayers": "",
+      "img1": null,
+      "img2": null,
+      "locked": false,
       "jumpHeight": "",
       "hardness": "",
       "weight": ""
