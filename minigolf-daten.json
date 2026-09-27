@@ -2400,7 +2400,7 @@
       "totalPlayers": "15",
       "img1": null,
       "img2": null,
-      "locked": false,
+      "locked": true,
       "jumpHeight": "",
       "hardness": "",
       "weight": ""
