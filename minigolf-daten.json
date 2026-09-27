@@ -1051,6 +1051,74 @@
       "name": "Einballturnier Andreas",
       "rounds": [
         {
+          "date": "2017-05-21",
+          "year": "2017",
+          "groupId": "dmny15ge",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "24",
+          "windSpeed": "3",
+          "precipProbability": "0",
+          "id": "srjtl3mn",
+          "scores": [
+            2,
+            2,
+            4,
+            1,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            1
+          ],
+          "roundNumber": 2,
+          "orderTracked": true
+        },
+        {
+          "date": "2017-05-21",
+          "year": "2017",
+          "groupId": "dmny15ge",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "24",
+          "windSpeed": "3",
+          "precipProbability": "0",
+          "id": "40venlv7",
+          "scores": [
+            2,
+            2,
+            3,
+            2,
+            3,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            5,
+            1,
+            1
+          ],
+          "roundNumber": 1,
+          "orderTracked": true
+        },
+        {
           "date": "2016-05-28",
           "year": "2016",
           "groupId": "zkdhbskn",
@@ -1143,6 +1211,16 @@
       "hardness": "",
       "weight": "",
       "ballId": "4r45uqji"
+    },
+    "dmny15ge": {
+      "place": "",
+      "totalPlayers": "",
+      "img1": null,
+      "img2": null,
+      "locked": false,
+      "jumpHeight": "",
+      "hardness": "",
+      "weight": ""
     }
   },
   "balls": [
