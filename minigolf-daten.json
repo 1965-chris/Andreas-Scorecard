@@ -1051,6 +1051,74 @@
       "name": "Einballturnier Andreas",
       "rounds": [
         {
+          "date": "2026-06-21",
+          "year": "2026",
+          "groupId": "gxbr0q26",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "23",
+          "windSpeed": "5",
+          "precipProbability": "0",
+          "id": "z0g32z30",
+          "scores": [
+            2,
+            3,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            1,
+            1
+          ],
+          "roundNumber": 2,
+          "orderTracked": true
+        },
+        {
+          "date": "2026-06-21",
+          "year": "2026",
+          "groupId": "gxbr0q26",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "23",
+          "windSpeed": "5",
+          "precipProbability": "0",
+          "id": "p5m2nfsw",
+          "scores": [
+            2,
+            3,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            1,
+            2,
+            2,
+            3,
+            3,
+            2,
+            3,
+            1
+          ],
+          "roundNumber": 1,
+          "orderTracked": true
+        },
+        {
           "date": "2025-05-25",
           "year": "2025",
           "groupId": "8rwn6vge",
@@ -1617,6 +1685,16 @@
       "hardness": "45",
       "weight": "50,5",
       "ballId": "ebkghij870"
+    },
+    "gxbr0q26": {
+      "place": "",
+      "totalPlayers": "",
+      "img1": null,
+      "img2": null,
+      "locked": false,
+      "jumpHeight": "",
+      "hardness": "",
+      "weight": ""
     }
   },
   "balls": [
