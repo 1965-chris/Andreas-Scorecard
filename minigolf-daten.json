@@ -1926,6 +1926,16 @@
       "jumpHeight": "",
       "hardness": "",
       "weight": ""
+    },
+    "4clwsmkh": {
+      "place": "4",
+      "totalPlayers": "12",
+      "img1": null,
+      "img2": null,
+      "locked": false,
+      "jumpHeight": "",
+      "hardness": "",
+      "weight": ""
     }
   },
   "balls": [
