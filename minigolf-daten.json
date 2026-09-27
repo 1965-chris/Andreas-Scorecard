@@ -1773,10 +1773,10 @@
     },
     "dxxuv6cc": {
       "place": "6",
-      "totalPlayers": "112",
+      "totalPlayers": "12",
       "img1": null,
       "img2": null,
-      "locked": false,
+      "locked": true,
       "jumpHeight": "",
       "hardness": "",
       "weight": ""
