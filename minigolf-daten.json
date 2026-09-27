@@ -1601,6 +1601,74 @@
       "name": "Einballturnier Heike",
       "rounds": [
         {
+          "date": "2025-05-25",
+          "year": "2025",
+          "groupId": "hz64hudj",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "23",
+          "windSpeed": "2",
+          "precipProbability": "0",
+          "id": "oil97g3a",
+          "scores": [
+            1,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1,
+            3,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            1
+          ],
+          "roundNumber": 2,
+          "orderTracked": true
+        },
+        {
+          "date": "2025-05-25",
+          "year": "2025",
+          "groupId": "hz64hudj",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "23",
+          "windSpeed": "2",
+          "precipProbability": "0",
+          "id": "rftcxajc",
+          "scores": [
+            2,
+            3,
+            2,
+            1,
+            3,
+            2,
+            1,
+            2,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1
+          ],
+          "roundNumber": 1,
+          "orderTracked": true
+        },
+        {
           "date": "2024-09-29",
           "year": "2024",
           "groupId": "5g9b54c1",
@@ -2245,6 +2313,16 @@
       "img1": null,
       "img2": null,
       "locked": true,
+      "jumpHeight": "",
+      "hardness": "",
+      "weight": ""
+    },
+    "hz64hudj": {
+      "place": "",
+      "totalPlayers": "",
+      "img1": null,
+      "img2": null,
+      "locked": false,
       "jumpHeight": "",
       "hardness": "",
       "weight": ""
