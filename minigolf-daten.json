@@ -1132,7 +1132,18 @@
   },
   "accessories": [],
   "gastro": [],
-  "tournamentPlacements": {},
+  "tournamentPlacements": {
+    "zkdhbskn": {
+      "place": "4",
+      "totalPlayers": "13",
+      "img1": null,
+      "img2": null,
+      "locked": false,
+      "jumpHeight": "",
+      "hardness": "",
+      "weight": ""
+    }
+  },
   "balls": [
     {
       "id": "eb7yjndnum",
