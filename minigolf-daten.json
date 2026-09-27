@@ -2318,11 +2318,11 @@
       "weight": ""
     },
     "hz64hudj": {
-      "place": "",
-      "totalPlayers": "",
+      "place": "1",
+      "totalPlayers": "15",
       "img1": null,
       "img2": null,
-      "locked": false,
+      "locked": true,
       "jumpHeight": "",
       "hardness": "",
       "weight": ""
