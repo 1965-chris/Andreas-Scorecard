@@ -5,6 +5,40 @@
       "name": "Andreas",
       "rounds": [
         {
+          "date": "2026-09-28",
+          "year": "2026",
+          "groupId": "ajixy4pm",
+          "time": "15:27",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "25",
+          "windSpeed": "7",
+          "precipProbability": "1",
+          "id": "z10malzg",
+          "scores": [
+            2,
+            3,
+            1,
+            1,
+            2,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            2
+          ],
+          "orderTracked": true
+        },
+        {
           "date": "2026-09-22",
           "year": "2026",
           "groupId": "s4yin5jq",
@@ -321,6 +355,47 @@
       "id": "p2",
       "name": "Christian",
       "rounds": [
+        {
+          "date": "2026-09-28",
+          "year": "2026",
+          "groupId": "ajixy4pm",
+          "time": "15:27",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "25",
+          "windSpeed": "7",
+          "precipProbability": "1",
+          "id": "em6xufcq",
+          "scores": [
+            2,
+            7,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            2,
+            3,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            1,
+            1
+          ],
+          "runs": {
+            "3": "rueck",
+            "5": "rueck",
+            "6": "rueck",
+            "10": "vor",
+            "12": "vor"
+          },
+          "orderTracked": true
+        },
         {
           "date": "2026-09-22",
           "year": "2026",
@@ -645,6 +720,43 @@
       "name": "Gerd",
       "rounds": [
         {
+          "date": "2026-09-28",
+          "year": "2026",
+          "groupId": "ajixy4pm",
+          "time": "15:27",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "25",
+          "windSpeed": "7",
+          "precipProbability": "1",
+          "id": "d4bhru2q",
+          "scores": [
+            4,
+            2,
+            1,
+            4,
+            2,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            1,
+            3,
+            2,
+            3,
+            3,
+            2,
+            1
+          ],
+          "stars": {
+            "3": true
+          },
+          "orderTracked": true
+        },
+        {
           "date": "2026-09-22",
           "year": "2026",
           "groupId": "s4yin5jq",
@@ -822,6 +934,40 @@
       "id": "bkc9viw0",
       "name": "Sylvia",
       "rounds": [
+        {
+          "date": "2026-09-28",
+          "year": "2026",
+          "groupId": "ajixy4pm",
+          "time": "15:27",
+          "weather": [
+            "cloud"
+          ],
+          "temperature": "25",
+          "windSpeed": "7",
+          "precipProbability": "1",
+          "id": "urw43sm8",
+          "scores": [
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            7,
+            2,
+            2,
+            2,
+            1,
+            1,
+            5,
+            2,
+            2,
+            1
+          ],
+          "orderTracked": true
+        },
         {
           "date": "2026-08-05",
           "year": "2026",
