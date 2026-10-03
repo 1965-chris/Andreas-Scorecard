@@ -5,8 +5,10 @@
       "text": "Weitergabe testen",
       "author": "Christian",
       "createdAt": 1791024735775,
-      "updatedAt": 1791024735775,
-      "done": false
+      "updatedAt": 1791025169774,
+      "done": true,
+      "doneAt": 1791025169774,
+      "doneBy": "Andreas"
     }
   ]
 }
