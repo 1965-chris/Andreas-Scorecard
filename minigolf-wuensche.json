@@ -5,8 +5,16 @@
       "text": "Testen",
       "author": "Andreas",
       "createdAt": 1791025772336,
-      "updatedAt": 1791025772336,
-      "done": false
+      "updatedAt": 1791025784193,
+      "done": false,
+      "comments": [
+        {
+          "id": "ens4mozf",
+          "author": "Andreas",
+          "text": "Nur so",
+          "at": 1791025784193
+        }
+      ]
     },
     {
       "id": "acn8th0k",
