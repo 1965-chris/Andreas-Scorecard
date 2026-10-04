@@ -5,40 +5,6 @@
       "name": "Andreas",
       "rounds": [
         {
-          "date": "2026-10-04",
-          "year": "2026",
-          "groupId": "kd5h901q",
-          "time": "13:00",
-          "weather": [
-            "sun"
-          ],
-          "temperature": "20",
-          "windSpeed": "3",
-          "precipProbability": "0",
-          "id": "yf4hjwao",
-          "scores": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
-          ],
-          "orderTracked": true
-        },
-        {
           "date": "2026-10-02",
           "year": "2026",
           "groupId": "ftcv8mm6",
@@ -748,40 +714,6 @@
       "id": "p2",
       "name": "Christian",
       "rounds": [
-        {
-          "date": "2026-10-04",
-          "year": "2026",
-          "groupId": "kd5h901q",
-          "time": "13:00",
-          "weather": [
-            "sun"
-          ],
-          "temperature": "20",
-          "windSpeed": "3",
-          "precipProbability": "0",
-          "id": "f0nqe96k",
-          "scores": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
-          ],
-          "orderTracked": true
-        },
         {
           "date": "2026-10-02",
           "year": "2026",
@@ -2953,7 +2885,9 @@
       "o2gsh81y",
       "v36rw2vg",
       "erzee9sg",
-      "cebjaqjm"
+      "cebjaqjm",
+      "yf4hjwao",
+      "f0nqe96k"
     ],
     "players": [
       "ka020506",
