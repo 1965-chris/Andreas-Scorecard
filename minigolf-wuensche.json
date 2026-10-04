@@ -5,8 +5,16 @@
       "text": "Testphase",
       "author": "Christian",
       "createdAt": 1791120680282,
-      "updatedAt": 1791120680282,
-      "done": false
+      "updatedAt": 1791120757367,
+      "done": false,
+      "comments": [
+        {
+          "id": "ny53o51p",
+          "author": "Andreas",
+          "text": "Prima",
+          "at": 1791120757367
+        }
+      ]
     },
     {
       "id": "emrt12fc",
