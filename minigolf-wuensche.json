@@ -5,7 +5,7 @@
       "text": "Testphase",
       "author": "Christian",
       "createdAt": 1791120680282,
-      "updatedAt": 1791120757367,
+      "updatedAt": 1791120777161,
       "done": false,
       "comments": [
         {
@@ -14,7 +14,8 @@
           "text": "Prima",
           "at": 1791120757367
         }
-      ]
+      ],
+      "deleted": true
     },
     {
       "id": "emrt12fc",
