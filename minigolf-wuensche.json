@@ -5,8 +5,9 @@
       "text": "Briefkasten",
       "author": "Andreas",
       "createdAt": 1792441815820,
-      "updatedAt": 1792441815820,
-      "done": false
+      "updatedAt": 1792444018840,
+      "done": false,
+      "deleted": true
     },
     {
       "id": "770f5g7w",
