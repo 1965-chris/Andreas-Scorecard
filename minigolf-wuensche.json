@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "id": "mxcbxuf5",
+      "text": "Briefkasten",
+      "author": "Andreas",
+      "createdAt": 1792441815820,
+      "updatedAt": 1792441815820,
+      "done": false
+    },
+    {
       "id": "770f5g7w",
       "text": "Noch eine kachel",
       "author": "Christian",
