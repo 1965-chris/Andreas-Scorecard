@@ -87,6 +87,14 @@
       "auth": "w5xRO4r7hLjZhBbK9wVykg",
       "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8",
       "stand": 1795369490462
+    },
+    {
+      "name": "Christian",
+      "endpoint": "https://web.push.apple.com/QOXBtgUAIuwGdA0x1wniItomTsmm5cyIrQWdqarxQHzqCL01TCVofOWHmW9OevJ2OANHBOdHOe2qdT6XV2o6__oNvnOf8wOG31i_6OkIxgZexJPoA67vpiR6ThgCrhHiL5eBJ4GZ8IdTkJ4GzT2J0En6ROmJeO96PTqZPurOeLk",
+      "p256dh": "BOnRqnyRU-aKrjAXc3R43tICRwoCj2bm540uBmpD8xGLWas40S4JHMYczFRpfINWvTCyABoQQspJXPajrOZN5cY",
+      "auth": "o373D80RQomlnX_tKn6LfA",
+      "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8",
+      "stand": 1795372640662
     }
   ]
 }
