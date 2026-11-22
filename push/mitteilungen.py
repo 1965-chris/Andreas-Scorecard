@@ -4,7 +4,7 @@
 # Gemeldet wird jede neue Nachricht den Geräten des Empfängers (Feld 'an').
 # Steht dort nichts, geht sie an alle angemeldeten Geräte ausser denen des Absenders.
 # Der geheime Schlüssel liegt nur als GitHub-Secret PUSH_SCHLUESSEL vor, nie im Repo.
-MITTEILUNGEN_VERSION = 3
+MITTEILUNGEN_VERSION = 4
 import base64, hashlib, hmac, json, os, time, urllib.error, urllib.request
 from urllib.parse import urlparse
 
@@ -206,6 +206,11 @@ def main():
         kennung = (str(n.get('from') or 'Mitspieler'), str(n.get('an') or ''))
         nach_absender.setdefault(kennung, []).append(n)
 
+    # Der Absender-Ausweis. Apple lehnt eine erfundene mailto-Adresse mit
+    # 403 ab; die Adresse der eigenen Seite nimmt es an.
+    _owner, _, _repo = REPO.partition('/')
+    absender_url = 'https://%s.github.io/%s/' % (_owner.lower(), _repo)
+
     weg = set()
     verschickt = 0
     for (absender, empfaenger), liste in nach_absender.items():
@@ -224,7 +229,7 @@ def main():
             text = '%d neue Nachrichten · %s' % (len(liste), kurz(liste[-1].get('text'), 90))
         inhalt = {'titel': '⛳ ' + absender, 'text': text, 'tag': 'minigolf-' + absender, 'ziel': 'nachrichten'}
         for a in ziele:
-            code = senden(a, inhalt, privat, 'mailto:minigolf@example.invalid')
+            code = senden(a, inhalt, privat, absender_url)
             if code in (404, 410): weg.add(a.get('endpoint'))
             elif 200 <= code < 300: verschickt += 1
             bericht.append('%s -> %s: %s%s' % (absender, (a.get('name') or '?'), code,
