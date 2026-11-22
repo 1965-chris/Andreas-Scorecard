@@ -4,7 +4,7 @@
 # Gemeldet wird jede neue Nachricht den Geräten des Empfängers (Feld 'an').
 # Steht dort nichts, geht sie an alle angemeldeten Geräte ausser denen des Absenders.
 # Der geheime Schlüssel liegt nur als GitHub-Secret PUSH_SCHLUESSEL vor, nie im Repo.
-MITTEILUNGEN_VERSION = 2
+MITTEILUNGEN_VERSION = 3
 import base64, hashlib, hmac, json, os, time, urllib.error, urllib.request
 from urllib.parse import urlparse
 
@@ -146,25 +146,46 @@ def fuer_wen(abos, absender, empfaenger=None):
     return [a for a in abos if not gleich(a.get('name'), absender)]
 
 
+def stand_schreiben(gemeldet, tot, bericht):
+    """Was dieser Lauf getan hat - die App liest das und zeigt es an."""
+    alt = json_lesen(STAND_DATEI) or {}
+    neu = {'gemeldet': sorted(gemeldet)[-500:], 'stand': int(time.time()),
+           'tot': sorted(tot)[-100:], 'bericht': bericht[-20:]}
+    if (alt.get('gemeldet') == neu['gemeldet'] and alt.get('tot') == neu['tot']
+            and alt.get('bericht') == neu['bericht']):
+        return                      # nichts Neues - keinen Commit dafuer
+    schreiben(STAND_DATEI, neu, 'Mitteilungen: Stand')
+
+
 def main():
+    bericht = []
     privat_text = os.environ.get('PUSH_SCHLUESSEL', '').strip()
     if not privat_text:
-        print('Kein PUSH_SCHLUESSEL hinterlegt – es wird nichts verschickt.'); return
+        print('Kein PUSH_SCHLUESSEL hinterlegt – es wird nichts verschickt.')
+        stand_schreiben(set(), set(), ['Kein PUSH_SCHLUESSEL hinterlegt'])
+        return
     daten = json_lesen(NACHRICHTEN_DATEI) or {}
     nachrichten = [n for n in (daten.get('items') or []) if isinstance(n, dict) and n.get('id')]
     abos_roh = [a for a in (daten.get('abos') or []) if isinstance(a, dict)]
     if not nachrichten or not abos_roh:
-        print('Nichts zu melden (%d Nachrichten, %d Geräte).' % (len(nachrichten), len(abos_roh))); return
+        print('Nichts zu melden (%d Nachrichten, %d Geräte).' % (len(nachrichten), len(abos_roh)))
+        stand_schreiben(set((json_lesen(STAND_DATEI) or {}).get('gemeldet') or []),
+                        set((json_lesen(STAND_DATEI) or {}).get('tot') or []),
+                        ['%d Nachrichten, %d angemeldete Geräte – nichts zu tun'
+                         % (len(nachrichten), len(abos_roh))])
+        return
 
     privat = schluessel_laden(privat_text)
     oeffentlich = b64u(oeffentlich_roh(privat))
     abos = [a for a in abos_roh if abo_ok(a, oeffentlich)]
-    if not abos:
-        print('Kein Gerät passt zum hinterlegten Schlüssel.'); return
-
     stand = json_lesen(STAND_DATEI) or {}
     gemeldet = set(stand.get('gemeldet') or [])
+    tot = set(stand.get('tot') or [])
     jetzt = time.time()
+    if not abos:
+        print('Kein Gerät passt zum hinterlegten Schlüssel.')
+        stand_schreiben(gemeldet, tot, ['Kein Gerät passt zum hinterlegten Schlüssel'])
+        return
 
     neu = []
     for n in nachrichten:
@@ -175,8 +196,7 @@ def main():
         neu.append(n)
     if not neu:
         print('Keine neuen Nachrichten.')
-        if set(stand.get('gemeldet') or []) != gemeldet:
-            schreiben(STAND_DATEI, {'gemeldet': sorted(gemeldet)[-500:]}, 'Mitteilungen: Stand')
+        stand_schreiben(gemeldet, tot, ['Keine neuen Nachrichten (%d geprüft)' % len(nachrichten)])
         return
 
     # Nach Absender und Empfänger zusammenfassen: Jeder Faden meldet sich einzeln,
@@ -191,7 +211,11 @@ def main():
     for (absender, empfaenger), liste in nach_absender.items():
         ziele = fuer_wen(abos, absender, empfaenger)
         if not ziele:
-            for n in liste: gemeldet.add(n['id'])
+            # Nicht abhaken! Sonst gilt die Nachricht als gemeldet, bevor
+            # der Empfaenger sein Geraet überhaupt angemeldet hat. Sie
+            # wartet hier, bis eins da ist - oder bis sie zu alt wird.
+            bericht.append('%s -> %s: kein angemeldetes Gerät, wartet'
+                           % (absender, empfaenger or 'alle'))
             continue
         liste.sort(key=lambda x: x.get('at') or 0)
         if len(liste) == 1:
@@ -203,10 +227,12 @@ def main():
             code = senden(a, inhalt, privat, 'mailto:minigolf@example.invalid')
             if code in (404, 410): weg.add(a.get('endpoint'))
             elif 200 <= code < 300: verschickt += 1
+            bericht.append('%s -> %s: %s%s' % (absender, (a.get('name') or '?'), code,
+                           '' if 200 <= code < 300 else ' (nicht angenommen)'))
             print('%s %s -> %s' % (absender, (a.get('name') or '?'), code))
         for n in liste: gemeldet.add(n['id'])
 
-    schreiben(STAND_DATEI, {'gemeldet': sorted(gemeldet)[-500:], 'stand': int(jetzt)}, 'Mitteilungen: Stand')
+    stand_schreiben(gemeldet, tot | weg, bericht)
 
     if weg:   # Geräte, die abbestellt haben, aus der Liste nehmen
         rest = [a for a in abos_roh if a.get('endpoint') not in weg]
