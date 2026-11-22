@@ -97,15 +97,17 @@
       "id": "at8fsp8j",
       "from": "Christian",
       "an": "Andreas",
-      "text": "Hallo mein freund",
-      "at": 1795374221266
+      "at": 1795374221266,
+      "text": "",
+      "deleted": 1
     },
     {
       "id": "at0qsohp",
       "from": "Christian",
       "an": "Andreas",
-      "text": "So ein letzter test",
-      "at": 1795375168424
+      "at": 1795375168424,
+      "text": "",
+      "deleted": 1
     }
   ],
   "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8",
