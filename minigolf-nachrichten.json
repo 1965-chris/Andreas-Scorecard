@@ -28,6 +28,14 @@
       "auth": "sQRqrfJ26d4NVbG97z84zw",
       "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8",
       "stand": 1795362029579
+    },
+    {
+      "name": "Andreas",
+      "endpoint": "https://web.push.apple.com/QKbCw5ZVrrBm-D490CdudMViiidcf8VLaQH6ar2p00Z5UOcaWt6ozxmb9Xtg2UPvWaSP6kWVbJksqXEafJPCLZn5D5b5hftx4ARa_ge0_fQbRY4z4yLFHfan6o1apmcvH_vntg24Hf7gfc_IgNlCFqIrLQbrpMkRuWa8r-cPBBY",
+      "p256dh": "BMEIYRxtDVlDqKp9i9jABsARNNcEtJzU4NFOtXbBg59Tu6r91dJP-sx5py0rdigYJWq4t8GNG1YJ3WCcMRm8ElQ",
+      "auth": "10U3q-gZNFmmyi-c5Gqd4A",
+      "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8",
+      "stand": 1795364359534
     }
   ]
 }
