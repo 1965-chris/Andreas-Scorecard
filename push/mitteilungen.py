@@ -1,9 +1,10 @@
 # Mitteilungen der Minigolf-Scorecard – schickt Push-Mitteilungen an die Geräte, die sie erlaubt haben.
 # Diese Datei legt die App selbst ins Repo (push/mitteilungen.py) und hält sie aktuell;
 # gestartet wird sie von .github/workflows/mitteilungen.yml, sobald sich minigolf-nachrichten.json ändert.
-# Gemeldet wird jede neue Nachricht an alle angemeldeten Geräte ausser denen des Absenders.
+# Gemeldet wird jede neue Nachricht den Geräten des Empfängers (Feld 'an').
+# Steht dort nichts, geht sie an alle angemeldeten Geräte ausser denen des Absenders.
 # Der geheime Schlüssel liegt nur als GitHub-Secret PUSH_SCHLUESSEL vor, nie im Repo.
-MITTEILUNGEN_VERSION = 1
+MITTEILUNGEN_VERSION = 2
 import base64, hashlib, hmac, json, os, time, urllib.error, urllib.request
 from urllib.parse import urlparse
 
@@ -134,9 +135,15 @@ def abo_ok(a, schluessel):
                 and (not schluessel or not a.get('schluessel') or a.get('schluessel') == schluessel))
 
 
-def fuer_wen(abos, absender):
-    """Alle Geräte ausser denen des Absenders – wer selbst schreibt, braucht keine Mitteilung."""
-    return [a for a in abos if str(a.get('name') or '').strip().lower() != str(absender or '').strip().lower()]
+def gleich(a, b):
+    return str(a or '').strip().lower() == str(b or '').strip().lower()
+
+
+def fuer_wen(abos, absender, empfaenger=None):
+    """Die Geräte des Empfängers. Ohne Empfänger: alle ausser denen des Absenders."""
+    if empfaenger:
+        return [a for a in abos if gleich(a.get('name'), empfaenger) and not gleich(a.get('name'), absender)]
+    return [a for a in abos if not gleich(a.get('name'), absender)]
 
 
 def main():
@@ -172,15 +179,17 @@ def main():
             schreiben(STAND_DATEI, {'gemeldet': sorted(gemeldet)[-500:]}, 'Mitteilungen: Stand')
         return
 
-    # Nach Absender zusammenfassen, damit nicht fünf Mitteilungen hintereinander aufploppen
+    # Nach Absender und Empfänger zusammenfassen: Jeder Faden meldet sich einzeln,
+    # und mehrere Nachrichten darin ploppen nicht fünfmal hintereinander auf.
     nach_absender = {}
     for n in neu:
-        nach_absender.setdefault(str(n.get('from') or 'Mitspieler'), []).append(n)
+        kennung = (str(n.get('from') or 'Mitspieler'), str(n.get('an') or ''))
+        nach_absender.setdefault(kennung, []).append(n)
 
     weg = set()
     verschickt = 0
-    for absender, liste in nach_absender.items():
-        ziele = fuer_wen(abos, absender)
+    for (absender, empfaenger), liste in nach_absender.items():
+        ziele = fuer_wen(abos, absender, empfaenger)
         if not ziele:
             for n in liste: gemeldet.add(n['id'])
             continue
