@@ -1,5 +1,13 @@
 {
-  "items": [],
+  "items": [
+    {
+      "id": "eftd3ekk",
+      "from": "Christian",
+      "text": "Hallo test",
+      "at": 1795362116550
+    }
+  ],
+  "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8",
   "abos": [
     {
       "name": "Christian",
@@ -9,6 +17,5 @@
       "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8",
       "stand": 1795362029579
     }
-  ],
-  "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8"
+  ]
 }
