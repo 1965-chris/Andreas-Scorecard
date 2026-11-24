@@ -127,6 +127,22 @@
       "auth": "w5xRO4r7hLjZhBbK9wVykg",
       "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8",
       "stand": 1795369490462
+    },
+    {
+      "name": "Andreas",
+      "endpoint": "https://web.push.apple.com/QK3m1izmZWXUn70gbt1xhgw76Trtsg7FYTKZBxvvA3frL5tK4BGpwD8qtHq44Qi7U1tA1qKfpM0yf1OvhgqEhiSMR23H_ka3kGjfbW4JEutEf1-z4vpjmCEWDlXMXjV61LorYlUX9neYa7Wuh318lyoA7fEixFHQxlyKHFJZpzM",
+      "p256dh": "BJK6Hb-VA33aZEnLEWAn1JYhocgv4PPF1Sb1RYM9V-GVo7d0bEsGcKc57aU3GoRgFGQDlcC5UjtQ4UBquiudImI",
+      "auth": "F2zQup48AiflyGlLOHZgBg",
+      "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8",
+      "stand": 1795375583406
+    },
+    {
+      "name": "Christian",
+      "endpoint": "https://web.push.apple.com/QErd5K5R0u-RMoJGLF-lU5w1oUqn5Knx0sIlmzqYKoXS1cl-HsiDGv5o5NDHmjbpr1rzjRWEU1gIdSdNA1mphRLHPyC_8WZEY3l__bNk3fEtYv84ITgc1kAf3bhmfTz1m1YJBHDAwZIyoiC-5yuM0pNdj4i8v1mSVq8GfAZ-_G8",
+      "p256dh": "BGK32Fd6Zp6IThph2knWmoU6NpuWTECbYQQxhEPfuBuFI0F48W538KFNjnfirRNYEJeb6m46LeTUngIN5vN__Lo",
+      "auth": "bAoLLAasSloIMfnG22CYpg",
+      "schluessel": "BMtA76xf60a1_LR4TKNZSblFVdhfROW9vmhnGShx-LEZBhSo-k30VrLnSUjWqV0wNo-TGMm6s_3zi2ssnDgbGT8",
+      "stand": 1795376676166
     }
   ],
   "runde": [
